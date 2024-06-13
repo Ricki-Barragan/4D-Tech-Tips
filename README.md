@@ -32,8 +32,8 @@ $newColl2:=reduceCollection($coll2)// ["text1", "text2", "text3", "text4"]
 $newColl3:=reduceCollection($coll3) // ["name1",["name2","text"],"name3",["name4","text"]]
 ```
 >Tech Tip: <https://kb.4d.com/assetid=79066>
-Notice with $newColl1 and $newColl2 the Collections being passed to the utility method contain several collection elements and those collection elements are returned in a single Collection.
 
-The Collection $coll3 is reduced and the result is stored in $newColl3
+Notice with $newColl1 and $newColl2 the Collections being passed to the utility method contain several collection elements and those collection elements are returned in a single Collection. The Collection $coll3 is reduced and the result is stored in $newColl3
+
 [![logo 4D blog with link](https://blog.4d.com/wp-content/uploads/2016/09/logoOrignal.png)](https://blog.4d.com)
 ><https://blog.4d.com/the-use-of-formulas-in-collections-callback-commands/>
