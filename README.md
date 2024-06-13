@@ -10,6 +10,22 @@ The Utility Method ***reduceCollection()*** accepts a collection as parameter an
 | --------- |----------|--------------------------|
 | $coll     |Collection| Collection to be reduced |
 
+#### reduceCollection($1)
+```4d
+// reduceCollection($1)
+#DECLARE($coll : Collection)->$result : Collection
+If (Count parameters=1)
+  $result:=$coll.reduce(Formula(Flatten))
+End If
+```
+#### Flatten method
+```4d
+#DECLARE($formula_o : Object)
+If ($formula_o.accumulator=Null)
+  $formula_o.accumulator:=New collection
+End if
+$formula_o.accumulator.combine($formula_o.value) 
+```
 
 ### Example
 ```4d
