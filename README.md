@@ -12,7 +12,6 @@ The Utility Method ***reduceCollection()*** accepts a collection as parameter an
 
 #### reduceCollection($1)
 ```4d
-// reduceCollection($1)
 #DECLARE($coll : Collection)->$result : Collection
 If (Count parameters=1)
   $result:=$coll.reduce(Formula(Flatten))
